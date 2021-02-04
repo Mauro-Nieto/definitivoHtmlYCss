@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>herencia y especificidad</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1 id="page-title" class="title">empresa</h1>
+        <nav>
+            <ul id="main-nav" class="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Cursos</a></li>
+                <li><a href="">instructores</a></li>
+                <li><a href="" class="blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <div ejemplo combinadores cercano>
+        <h2>soy un h2</h2>
+        <p>parrafo</p>
+        <h2>soy un h2</h2>
+        <h3>soy un h3</h3>
+        <p>parrafo</p>
+        <h2>soy un h2</h2>
+        <p>parrafo</p>
+    </div> -->
+<!-- generales -->
+    <!-- <div>
+        <h2>soy un h2</h2>
+        <p>parrafo</p>
+        <h2>soy un h2</h2>
+        <h3>soy un h3</h3>
+        <p>parrafo</p>
+    </div> -->
+
+    <!-- child -->
+    <div>
+        <article>
+            <p>soy un parrafo</p>
+        </article>
+        <article>
+            <p>soy un parrafo</p>
+        </article>
+        <section>
+            <div>
+                <p>soy un texto</p>
+            </div>
+        </section>
+        <p>soy otro texto</p>
+    </div>
+</body>
+</html>

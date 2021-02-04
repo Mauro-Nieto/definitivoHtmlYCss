@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagenes responsive</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+    <!-- segun el tamaño de la imagen el la @media se asigna de arriba hacia abajo desde la mas grande a la mas pequeña -->
+        <picture>
+            <source media="(min-width:1300px",/imgs/large.jpg />
+            <source media="(min-width:1000px",/imgs/medium.jpg />
+            <img src="./imgs/small.jpg" alt="imagen de ejemplo">
+        </picture>
+    </main>
+</body>
+</html>

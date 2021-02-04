@@ -1,0 +1,7 @@
+Accesibilidad
+
+Semantica: html utilizar las etiquetas adecuadamente dejando de usar tantos div.
+
+
+Texto: no usar px para las fuentes 
+es emjor usar medidas relativas como REM 

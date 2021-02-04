@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso def html y Css</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li class="main-nav__item"><a href="">Home</a></li>
+                <li class="main-nav__item"><a href="">Conoceme</a></li>
+                <li class="main-nav__item"><a href="">EStudios</a></li>
+                <li class="main-nav__item"><a href="">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- modelo de caja -->
+        <section>
+            <h1>titulo</h1>
+            <div>
+                <p>
+                    parrafo
+                </p>
+            </div>
+        </section>
+
+
+    <!-- main es la etieuta principal -->
+    <main>
+        <section>
+        
+            <p class="parrafo">Soy un parrafo</p>
+            <p id="texto">soy otro parrafo</p>
+
+            <figure>
+                <img 
+                src="./img/owen.jpeg" 
+                alt="foto de owen"
+                />
+                <figcaption>Soy Owen Cardenas</figcaption> 
+            </figure>
+        </section>
+        <section>
+            <video  controls preload="auto">
+                <source src="./Videos/WIN_20210116_15_13_43_Pro.mp4#t=">
+                <source src="./Videos/WIN_20210116_15_13_43_Pro.m4v#t=">
+            </video>
+        </section>
+        <section>
+            <form action="">
+                <label for="nombre">
+                    <span>¿Cual es tu nombre?</span>
+                    <input type="text" id="nombre" placeholder="Tu nombre"/>
+                </label>
+                <label for="edad">
+                    <span>¿cual es tu edad?</span>
+                    <input type="date" id="edad"/>
+                </label>
+                <label for="horario">
+                    <span>¿En que horario duermes?</span>
+                    <input type="time" id="horario"/>
+                </label>
+
+                <label for="hora">
+                    <span>hora</span>
+                    <input type="time" id="hora" name="hora">
+                </label>
+                <label for="Dia">
+                    <span>Día</span>
+                    <input type="date" id="dia" name="dia">
+                </label>
+                <label for="semana">
+                    <span>semana</span>
+                    <input type="week" id="semana" name="semana">
+                </label>
+                <label for="mes">
+                    <span>Mes</span>
+                    <input type="month" id="mes" name="mes">
+                </label>
+                <input type="submit">
+            </form>
+<!-- forma condensada de realizar un formilario con hora dia mes año  -->
+            <form action="">
+                <label for="calendario">
+                    <span>calendario</span>
+                    <input type="datetime-local" id="calendario" name="calendario">
+                </label>
+                <input type="submit">
+            </form>
+<!-- formulario 3  -->
+            <form action="">
+                <label for="nombre">
+                    <span>¿Cual es tu nombre?</span>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                </label>
+                <label for="correo">
+                    <span>¿Cual es tu correo?</span>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </label>
+                <label for="pais">
+                    <span>¿Cual es tu pais?</span>
+                    <input type="text" id="pais" name="pais" autocomplete="country" required>
+                </label>
+                <input type="submit">
+            </form>
+
+<!--  -->
+    <select name="estudios" id="">
+        <option value="programación">programación</option>
+        <option value="natacion">natación</option>
+        <option value="Boyscouts">Boyscouts</option>
+        <option value="Artes_Marciales_Mixtas">Artes Marciales Mixtas</option>
+    </select>
+        </section>
+
+
+    <!-- forma ideal de crear juna etiqueta de select -->
+    <select name="selectIdeal" id="">
+        <input list="estudios">
+        <datalist id="estudios">
+            <option value="programación"></option>
+            <option value="natacion"></option>
+            <option value="Boyscouts"></option>
+            <option value="Artes_Marciales_Mixtas"></option>
+            <option value="Pintura"></option>
+        </datalist>
+    </select>
+
+<!-- Buttom -->
+// se aconceja usar input para formularios y button para otro tipo de botones en la página siendo este ultimo el mas facil de personalizar 
+<section>
+    <!-- value asigna el texto que se muestra en el boton  -->
+    <input type="submit" value="nombre">
+    <!--  -->
+    <button type="submit"> Enviar </button>
+</section>
+    
+
+
+
+    </main>
+</body>
+</html>

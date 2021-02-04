@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+    margin-bottom: 10px;
+}
+#page-title {
+    font-family: serif;
+}
+.title{
+    font-size: 18px;
+    font-family: monospace;
+}
+.nav{
+    margin-top: 10px;
+    list-style-type: none ;
+    padding-left: 0;
+}
+
+.nav li{
+    display: inline-block;
+}
+.nav a{
+    color: green;
+    background:red ;
+    padding: 5px;
+    text-decoration: none;
+}
+.nav .blog{
+    background-color:blue;
+}
+
+/* combinadores  */
+/* //hermano cercano "ajacent sibling"// a toda las etiquetas P que esten (+) cerca de un h2 aplicale este estilo*/
+
+h2 + p {
+    color: red
+}
+
+/* //Hermano general ~ // */
+h2 ~ p {
+    color: green;
+}
+
+
+/* child hijo directo */
+/* la etiqueta parrafo que sea hija directa de una etiqueta div agregale estos estilos */
+
+div > p {
+    color:fuchsia
+}
+
+/* descendiente todas las etiquetas p que esten adentro de una etiqueta div aplica el estilo*/
+
+div p {
+    color: orange;
+}
+
